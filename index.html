@@ -34,7 +34,9 @@
       referrerpolicy="no-referrer" />
 
     <!-- Fancy Box CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
@@ -47,7 +49,7 @@
 
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
   </head>
   <body
     data-bs-spy="scroll"
@@ -290,6 +292,93 @@
           where you can experience the best of city living yet enjoy adventurous
           excursions into nature.
         </p>
+      </section>
+
+      <!--Highlights Section  -->
+      <section id="hallmarks_section" class="container p-4 mt-2 mt-md-5">
+        <h3 class="section-heading text-center text-uppercase">
+          PROJECT HIGHLIGHTS
+        </h3>
+        <h5 class="sub-heading text-center">tagline</h5>
+        <!-- Highlights -->
+        <div
+          class="row mr0 aos-init aos-animate mt-2"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="3000">
+          <div class="col-md-6">
+            <ul class="highlights">
+              <li>
+                <span> 1</span>
+              </li>
+              <li>
+                <span> 2 </span>
+              </li>
+              <li>
+                <span> 3</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="highlights">
+              <li>
+                <span> 4</span>
+              </li>
+              <li>
+                <span> 5</span>
+              </li>
+              <li><span>6</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery & FLoor Plans -->
+      <section id="gallery_section" class="container p-4 mt-3 mb-3">
+        <div>
+          <h3 class="section-heading">GALLERY</h3>
+        </div>
+
+        <!-- Gallery -->
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery01.jpg"
+                data-src="img/gallery/gallery01.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery02.jpg"
+                data-src="img/gallery/gallery02.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery03.jpg"
+                data-src="img/gallery/gallery03.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery04.jpg"
+                data-src="img/gallery/gallery04.jpg"
+                alt="" />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
