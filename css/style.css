@@ -98,7 +98,7 @@ html {
 /* Slider */
 #slider_section {
   margin-top: 70px;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 .carousel {
@@ -211,7 +211,35 @@ html {
   border: 1px solid var(--colorPrimary) !important;
 }
 
-* WalkThrough */ .walkthrough_container img {
+/* Configuration */
+
+.config-inner {
+  text-align: center;
+  font-weight: normal;
+  padding: 10px;
+  margin-top: 20px;
+
+  -webkit-box-shadow: 0px 0px 10px 0px var(--colorWhiteOverlay);
+  -moz-box-shadow: 0px 0px 10px 0px var(--colorWhiteOverlay);
+  box-shadow: 0px 0px 10px 0px var(--colorWhiteOverlay);
+  border-radius: 30px 0px 30px 0px;
+}
+.config-price {
+  background: var(--colorSecondary);
+  width: 75%;
+  margin: 15px auto;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 15px 0px;
+}
+
+.config-price a {
+  text-decoration: none;
+  color: var(--colorWhite);
+}
+
+/* WalkThrough */
+.walkthrough_container img {
   object-fit: fill;
 }
 
@@ -221,6 +249,13 @@ html {
 
 .bg-image {
   background-image: url("../img/backgrounds/walkthrough.webp");
+  height: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.bg-image-virtual {
+  background-image: url("../img/backgrounds/a.webp");
   height: 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
