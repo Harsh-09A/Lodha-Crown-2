@@ -58,7 +58,7 @@
         id="main-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="img/logo/logo.webp" alt="Logo" height="50px" />
+            <img src="img/logo/logo.png" alt="Logo" height="50px" />
           </a>
           <button
             class="navbar-toggler"
@@ -93,12 +93,7 @@
                   <span class="d-sm-inline"> Project Highlights </span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#features_section">
-                  <i class="fa-solid fa-bolt nav-icon"></i>
-                  <span class="d-sm-inline"> Features </span>
-                </a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="index.html#gallery_section">
                   <i class="fa-solid fa-images nav-icon"></i>
@@ -117,7 +112,12 @@
                   <span class="d-sm-inline"> Amenities </span>
                 </a>
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#walkthrough_section">
+                  <i class="fa-brands fa-youtube nav-icon"></i>
+                  <span class="d-sm-inline"> Walkthrough </span>
+                </a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html#location_section">
                   <i class="fa-solid fa-map-location nav-icon"></i>
@@ -135,7 +135,90 @@
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section id="thanku_section" class="container mt-5 p-4">
+        <div class="text-center">
+          <h2 class="section-heading text-center">Thank You</h2>
+          <p class="text-capitalize">
+            Your form is submitted, We'll get back to you soon.
+          </p>
+          <a href="index.html">
+            <button class="btn btn-primary submit-btn">Back To Home</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container text-center text-white">
+        <div class="d-flex justify-content-center">
+          <div class="qrcode">
+            <img src="img/qr/qr1.webp" class="" />
+            <p>
+              CROWN DOMBIVLI 1 <br />
+              PHASE I - P51700048779
+            </p>
+          </div>
+          <div class="qrcode">
+            <img src="img/qr/qr1.webp" class="" />
+            <p>
+              CROWN DOMBIVLI 2 <br />
+              PHASE I - P51700049154
+            </p>
+          </div>
+        </div>
+        <div>
+          <!-- <p>MahaRERA Registration No.: P51700048779 , P51700049154</p> -->
+
+          <p>
+            <a
+              href="https://maharera.mahaonline.gov.in"
+              style="color: #fff; text-decoration: none"
+              >maharera.mahaonline.gov.in</a
+            >
+          </p>
+          <!-- <p>
+              Site Address : Plot No. 87, Sector 11, Kharghar, Navi Mumbai -
+              410210
+            </p> -->
+
+          <p>
+            Disclaimer : All the specification, design, facilities, dimensions,
+            etc. are subject to the approval of the respective authorities &
+            developers and would be changed if necessary. The discretion remains
+            with the developers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Footer Fixed Button -->
+    <div class="container-fluid fixed-bottom action-footer-container">
+      <ul class="nav nav-fill action-footer">
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('https://wa.me/99999999999');"
+            href="https://wa.me/99999999999"
+            class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+          </a>
+        </li>
+        <li class="nav-item ps-1">
+          <a
+            onclick="return gtag_report_conversion('tel:+99999999999');"
+            href="tel:+99999999999"
+            class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone me-2"></i> Call Us
+          </a>
+        </li>
+
+        <li
+          class="nav-item"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <i class="fa-solid fa-download nav-icon"></i> Brochure
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
