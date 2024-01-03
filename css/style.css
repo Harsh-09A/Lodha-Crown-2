@@ -22,10 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 9e801b */
+/* #9e801b  #e95f25  #253c6d*/
 :root {
-  --colorPrimary: #253c6d;
-  --colorSecondary: #e95f25;
+  --colorPrimary: #e95f25;
+  --colorSecondary: #253c6d;
   --colorWhite: #ffffff;
   --colorOffWhite: #f7f7f7;
   --colorBorderWhite: #dbe4e9;
@@ -220,7 +220,7 @@ html {
 }
 
 .bg-image {
-  background-image: url("../img/walkthrough/walkthrough.webp");
+  background-image: url("../img/backgrounds/walkthrough.webp");
   height: 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -290,5 +290,113 @@ html {
 @media screen and (max-width: 600px) {
   .locations-left {
     margin-top: 2em;
+  }
+}
+
+/* About */
+#about_section {
+  background: url("../img/backgrounds/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 970px; */
+  background-attachment: fixed;
+  padding: 0 !important;
+}
+.about_overlay {
+  background: var(--colorBackgroundOverlay);
+  /* height: 970px; */
+  padding: 0;
+}
+
+.form-label {
+  display: none;
+}
+.inputStyle {
+  font-size: 1em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.submit-btn,
+.submit-btn:hover,
+.submit-btn:focus-visible,
+.submit-btn:active {
+  background-color: var(--colorSecondary) !important;
+  border: none !important;
+}
+@media screen and (max-width: 600px) {
+  .enquire-section {
+    padding: 0 !important;
+  }
+  .about-para-container {
+    padding: 2em !important;
+    padding-top: 2em;
+  }
+}
+
+/* Footer */
+#footer {
+  background-color: var(--colorBlack);
+  padding: 40px 20px;
+}
+.qrcode {
+  text-align: center;
+  margin: 10px 20px;
+  color: var(--colorWhite);
+}
+
+.qrcode img {
+  /* display: block;
+  margin: auto; */
+  width: 100px;
+  /* margin-bottom: 10px; */
+}
+
+@media screen and (min-width: 990px) {
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+
+/* Action Footer */
+.action-footer-container {
+  margin: 0;
+  padding: 0;
+}
+.action-footer {
+  margin: 0;
+  padding: 7px;
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+  cursor: pointer;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  font-size: 0.8em;
+}
+
+.action-footer li {
+  border-left: 1px solid var(--colorBlack);
+}
+
+.action-footer li:first-child {
+  border-left: none !important;
+}
+/* For Desktop */
+@media only screen and (min-width: 990px) {
+  .action-footer {
+    display: none;
+  }
+}
+
+/* Tab Buttons */
+.tab-buttons li {
+  width: 18em;
+}
+@media screen and (max-width: 600px) {
+  .tab-buttons {
+    justify-content: center;
+  }
+  .tab-buttons li {
+    width: 90vw;
   }
 }
